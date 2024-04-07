@@ -1,0 +1,1215 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #fff 0%, #eda3b1 100%);
+  /* overflow: hidden; */
+}
+
+.container {
+  max-width: 91.6%;
+  margin: 0 auto;
+}
+
+.topbar-center-logo-mobile {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-top: 4px;
+  padding-left: 8%;
+  padding-bottom: 4px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #ffffff;
+  /* font-family: helcetica; */
+}
+
+.navbarList {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-align: right;
+  margin: 25px 0;
+}
+
+.navbarListItem {
+  float: left;
+  padding: 0 1.0416666667vw;
+}
+
+.navbarListItem a {
+  outline-offset: -0.5555555556vw;
+  padding: 0.8333333333vw 0 0.6944444444vw;
+  color: #a5a5a8;
+  font-size: 0.8086111111vw;
+  font-weight: 700;
+  line-height: 0.9722222222vw;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1597222222vw;
+}
+
+.navbarListItemLast a {
+  color: black;
+}
+
+.navbarListItem a:hover {
+  color: black;
+  outline-offset: -0.5555555556vw;
+  white-space: nowrap;
+  border-bottom: 2px solid rgba(255, 128, 0, 0.747);
+}
+
+.siteLogo a {
+  display: block;
+  align-items: center;
+  padding: 0 1.3888888889vw;
+  transition: all 0.5s;
+}
+
+.siteLogo a img {
+  width: 6.099vw;
+  height: 5.06vw;
+  display: block;
+}
+
+.siteLogo a:hover {
+  transform: scale(1.2);
+}
+
+.drop-down {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .title-bar {
+    padding: 6.25vw 4.375vw 0;
+    overflow: hidden;
+  }
+  .topbar-center-logo-mobile {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #ffffff;
+  }
+  .title-bar .inner-container {
+    padding: 0 5vw;
+  }
+  .title-bar .title-bar-left {
+    float: left;
+    position: relative;
+  }
+  .title-bar .title-bar-left .logo {
+    width: 19.375vw;
+  }
+  .title-bar .title-bar-left .logo img {
+    width: 100%;
+  }
+  .title-bar .title-bar-right {
+    float: right;
+  }
+  .title-bar .menu-icon {
+    background: no-repeat;
+    border: none;
+    margin: 3.75vw 0;
+    outline: none;
+    position: relative;
+    padding: 0;
+    width: 6.25vw;
+    height: 6.25vw;
+  }
+  .title-bar .menu-icon .bar:first-child {
+    top: 1.25vw;
+  }
+  .title-bar .menu-icon .bar {
+    border: solid 0.3125vw #000;
+    background: #000;
+    width: 6.25vw;
+    height: 0.625vw;
+    display: block;
+    position: absolute;
+    transition: 0.25s ease-in-out;
+  }
+  .title-bar .menu-icon .bar:nth-child(2) {
+    bottom: 1.25vw;
+  }
+  .navbar {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 22.45vw;
+    left: 27.949vw;
+  }
+  .responsive {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    width: 68%;
+    z-index: 2;
+    background-color: #fff;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0vw 4.6875vw 6.25vw -1.5625vw rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    max-height: calc(100vh - 20vw);
+    padding-bottom: 6.25vw;
+  }
+  .navbarList {
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .navbarListItem {
+    padding: 1.25vw 1.6875vw;
+    text-align: left;
+    position: relative;
+  }
+  .navbarListItem a {
+    outline-offset: -2.5vw;
+    padding: 2.5vw 0;
+    color: #afaeb1;
+    font-size: 2.8125vw;
+    font-weight: 700;
+    line-height: 3.4375vw;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.3125vw;
+    text-decoration: none;
+    border-bottom: solid 0.625vw #fff;
+    display: inline-block;
+  }
+  .siteLogo a img {
+    display: none;
+  }
+  .menu-icon .open.bar:first-child {
+    transform: rotate(45deg);
+    left: 0;
+    top: 2.8125vw;
+  }
+  .menu-icon .open.bar:nth-child(2) {
+    transform: rotate(-45deg);
+    left: 0;
+    bottom: 2.8125vw;
+  }
+}
+/*<<<<< Header 1-section >>>>*/
+.hero {
+  padding-top: 10%;
+}
+
+.waterInfo {
+  position: relative;
+  overflow: hidden;
+  background-image: url(//www.evian.com/en_us/wp-content/themes/evian/assets/css/../images/home-hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 54.0277777778vw;
+}
+
+.waterInfoWrapper {
+  position: absolute;
+  width: 41.6666666667vw;
+  left: 6.9444444444vw;
+  top: 8.3333333333vw;
+}
+
+.waterInfoTitle {
+  color: #615f68;
+  font-size: 4.5vw;
+  font-weight: 400;
+  line-height: 4.8611111111vw;
+  letter-spacing: -0.1388888889vw;
+  margin: 0;
+  margin-bottom: 2.7777777778vw;
+}
+
+.waterInfoText {
+  font-size: 1.6666666667vw;
+  line-height: 2.0833333333vw;
+  color: #615f68;
+  font-weight: 300;
+  /* padding-right: 3.4722222222222223vw; */
+  /* font-family: "Helvetica Neue"; */
+  /* font-size: 1.25vw; */
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    padding-top: 22.001vw;
+    margin-bottom: 11.25vw;
+  }
+  .waterInfo {
+    background-image: url("/image/home-hero-bg-sm.jpg");
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 137.5vw;
+  }
+  .waterInfoWrapper {
+    position: static;
+    width: auto;
+    padding: 6.25vw 4.6875vw;
+  }
+  .waterInfoTitle {
+    font-size: 8.3125vw;
+    line-height: 9.375vw;
+    letter-spacing: -0.2397836563vw;
+    margin-bottom: 6.25vw;
+    font-weight: 100;
+  }
+  .waterInfoText {
+    font-size: 5vw;
+    line-height: 6.5625vw;
+    padding-right: 31.25vw;
+  }
+}
+/* <<<  MAIN >>> */
+/*<<< SECTION ADVERTISE >>>*/
+.aboutWater {
+  margin: 4.8611111111vw 0;
+}
+
+.aboutWaterWrapper {
+  max-width: 100%;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.aboutWaterLeft {
+  background-color: #dd7e96;
+  flex: 1;
+  padding: 5.5555555556vw 4.8611111111vw 3.4722222222vw;
+  text-align: center;
+}
+
+.aboutWaterText {
+  /* color: #fff;
+      font-size: 27.1px;
+      font-weight: 300;
+      line-height: 2.0833333333333335vw;
+      text-align: center;
+      padding: 0 3.8194444444444446vw;
+      margin-bottom: 4.166666666666667vw; */
+  color: #fff;
+  font-size: 1.6666666667vw;
+  font-weight: 300;
+  line-height: 2.0833333333vw;
+  text-align: center;
+  padding: 0 3.8194444444vw;
+  margin-bottom: 4.1666666667vw;
+}
+
+.aboutWaterImage {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutWaterImage img {
+  /* max-width: 28%;
+      /* max-height: 70%; */
+  /* margin: 10.6944px;  */
+  width: 11.25vw;
+  margin: 0.6944444444vw;
+}
+
+.aboutWaterBtn {
+  background: #fff;
+  margin-top: 2.0833333333vw;
+  color: #615f68;
+  font-size: 0.9027777778vw;
+  font-weight: 600;
+  line-height: 2.0833333333vw;
+  text-align: center;
+  letter-spacing: 0.0967261806vw;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: solid 0.1041666667vw #615f68;
+  padding: 0.5555555556vw 1.0416666667vw;
+  min-width: 16.1111111111vw;
+  display: inline-block;
+  /*font-size: 13px;
+      font-weight: 600;
+      line-height: 30px;*/
+  /* font-family: "Helvetica Neue"; */
+}
+
+.aboutWaterBtn:hover {
+  background-color: #d81d49;
+  color: #ffffff;
+  border: solid 0.1041666667vw #d81d49;
+}
+
+.aboutWaterRight {
+  width: 48%;
+  background-image: url("//www.evian.com/en_us/wp-content/themes/evian/assets/css/../images/balmain/evian-balmain-group-lifting-woman.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media screen and (max-width: 767px) {
+  .aboutWater {
+    margin-bottom: 11.25vw;
+  }
+  .aboutWaterWrapper {
+    flex-direction: column-reverse;
+  }
+  .aboutWaterLeft {
+    padding: 9.375vw 3.125vw 6.25vw;
+  }
+  .aboutWaterText {
+    font-size: 5vw;
+    line-height: 6.5625vw;
+    padding: 0 8.4375vw;
+    margin-bottom: 9.375vw;
+  }
+  .aboutWaterImage {
+    justify-content: center;
+  }
+  .aboutWaterImage img {
+    width: 25vw;
+    margin: 1.5625vw;
+  }
+  .aboutWaterBtn {
+    margin-top: 4.6875vw;
+    font-size: 2.8125vw;
+    line-height: 7.03125vw;
+    letter-spacing: 0.2008928438vw;
+    border: solid 0.3125vw #615f68;
+    padding: 0.625vw 1.5625vw;
+    min-width: 37.5vw;
+  }
+  .aboutWaterRight {
+    width: 100%;
+    height: 70.3125vw;
+  }
+}
+/* <<< SECTION  ROTHY'S EVIAN >>>> */
+.aboutWaterSecond {
+  padding-top: 3.1666666667vw;
+}
+
+.aboutWaterTwoWrapper {
+  flex-direction: row-reverse;
+}
+
+.aboutWaterLeftAdd {
+  background: linear-gradient(to bottom, #d4d8e1 40%, #dd7e96 95%, rgb(254, 254, 0) 9%);
+  padding: 3.5555555556vw 4.8611111111vw 3.4722222222vw;
+}
+
+.aboutWaterSecondTitle {
+  color: #000000;
+  font-size: 2.3333333333vw;
+  font-weight: 100;
+  line-height: 4.0972222222vw;
+  text-transform: uppercase;
+  margin-bottom: 2vw;
+}
+
+.aboutWaterSecondTitle span {
+  text-transform: lowercase;
+  color: red;
+}
+
+.aboutWaterTextAdd {
+  font-size: 1.6666666667vw;
+  line-height: 2.0833333333vw;
+  text-align: center;
+  width: 40.1111111111vw;
+  color: #615f68;
+  margin-bottom: 2.0833333333vw;
+}
+
+.aboutWaterImageRight {
+  width: 40%;
+  background-image: url("/image/twoPersons.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media screen and (max-width: 767px) {
+  .aboutWaterSecond {
+    padding-top: 0;
+  }
+  .aboutWater {
+    margin-bottom: 11.25vw;
+  }
+  .aboutWaterWrapper {
+    flex-direction: column-reverse;
+  }
+  .aboutWaterLeftAdd {
+    padding: 9.375vw 3.125vw 6.25vw;
+  }
+  .aboutWaterSecondTitle {
+    font-size: 7.8125vw;
+    line-height: 7.8125vw;
+    margin-bottom: 6.25vw;
+  }
+  .aboutWaterTextAdd {
+    font-size: 5vw;
+    line-height: 6.5625vw;
+    text-align: center;
+    width: 100%;
+    padding: 0 6.25vw;
+  }
+  .aboutWaterImage {
+    justify-content: center;
+  }
+  .aboutWaterImage img {
+    width: 25vw;
+    margin: 1.5625vw;
+  }
+  .aboutWaterBtn {
+    margin-top: 4.6875vw;
+    font-size: 2.8125vw;
+    line-height: 7.03125vw;
+    letter-spacing: 0.2008928438vw;
+    border: solid 0.3125vw #615f68;
+    padding: 0.625vw 1.5625vw;
+    min-width: 37.5vw;
+  }
+  .aboutWaterImageRight {
+    width: 100%;
+    height: 70.3125vw;
+    background-image: url("/image/HomePage_Rothys_Tile_mobile_top.jpg");
+  }
+}
+/*<<< SECTION WE'VE ADDED SPARKLES >>>*/
+.aboutWaterThirdWrapper {
+  background-image: url("//www.evian.com/en_us/wp-content/themes/evian/assets/css/../images/sparkles/sparkling_HomePage_Tile.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 43.2638888889vw;
+  display: flex;
+  align-items: stretch;
+}
+
+.aboutWaterThirdContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 7.3611111111vw 35.2777777778vw 0 10.8333333333vw;
+  flex: 1;
+  position: relative;
+}
+
+.aboutWaterThirdContent h3 {
+  color: white;
+  font-size: 7vw;
+  font-weight: 500;
+  line-height: 5.8611111111vw;
+  letter-spacing: -0.1388888889vw;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3.3333333333vw;
+  font-stretch: extra-expanded;
+}
+
+.aboutWaterThirdBtn {
+  background: #fff;
+  margin-bottom: 1.3888888889vw;
+  min-width: 10.8333333333vw;
+  color: #615f68;
+  font-size: 0.9027777778vw;
+  font-weight: 600;
+  line-height: 2.0833333333vw;
+  text-align: center;
+  letter-spacing: 0.0967261806vw;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: solid 0.1041666667vw #615f68;
+  padding: 0.5555555556vw 1.0416666667vw;
+  display: inline-block;
+}
+
+.aboutWaterThirdBtn:hover {
+  background-color: #d81d49;
+  color: #ffffff;
+  border: solid 0.1041666667vw #d81d49;
+}
+
+@media screen and (max-width: 767px) {
+  .aboutWaterThird {
+    margin-bottom: 11.25vw;
+  }
+  .aboutWaterThirdWrapper {
+    background-image: url("/image/sparkling_HomePage_Tile-sm.jpg");
+    height: 152.5vw;
+  }
+  .aboutWaterThirdContent {
+    padding: 20.3125vw 8.75vw 0;
+  }
+  .aboutWaterThirdContent h3 {
+    font-size: 12.8125vw;
+    line-height: 12.8125vw;
+    margin-bottom: 4.6875vw;
+  }
+  .aboutWaterThirdBtn {
+    min-width: 27.5vw;
+    padding: 0.625vw 1.5625vw 0;
+    font-size: 2.8125vw;
+    line-height: 7.03125vw;
+    letter-spacing: 0.2008928438vw;
+    border: solid 0.3125vw #615f68;
+  }
+}
+/*<<< SECTION OUR PRODUCTS >>>*/
+.aboutWaterFourthWrapper {
+  width: 100%;
+  background: #fff;
+  padding: 6.5972222222vw 7.2916666667vw;
+  height: 59.4444444444vw;
+}
+
+.aboutWaterFourthContent h2 {
+  color: #615f68;
+  font-family: "Helvetica Neue";
+  font-size: 3.3333333333vw;
+  font-weight: 100;
+  line-height: 4.0972222222vw;
+  margin: 0;
+  margin-bottom: 2.0833333333vw;
+}
+
+.aboutWaterFourthContent {
+  width: 28.4722222222vw;
+  color: #615f68;
+  font-family: "Helvetica Neue";
+  font-size: 1.25vw;
+  font-weight: 300;
+  line-height: 1.6666666667vw;
+  margin: 0;
+  margin-bottom: 2.0833333333vw;
+}
+
+@media screen and (max-width: 767px) {
+  .aboutWaterFourthWrapper {
+    padding: 6.25vw 4.6875vw;
+    height: 106.25vw;
+  }
+  .aboutWaterFourthWrapper h2 {
+    font-size: 7.8125vw;
+    line-height: 7.8125vw;
+    margin-bottom: 6.25vw;
+    font-weight: 100;
+  }
+  .aboutWaterFourthContent {
+    width: auto;
+    font-size: 4.375vw;
+    line-height: 5.9375vw;
+    font-weight: 100;
+    margin-bottom: 6.25vw;
+  }
+}
+/*<<< SECTION OUR WATER >>>*/
+.ourWaterContainer {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.ourWaterCard {
+  width: 43.4722222222vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.ourWaterCard img {
+  width: 100%;
+  overflow: clip;
+}
+
+.ourWaterContent {
+  background: #fff;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 4.8611111111vw 6.9444444444vw;
+  justify-content: center;
+  flex: 1;
+}
+
+.ourWaterContent h2 {
+  color: #615f68;
+  font-family: "Helvetica Neue";
+  font-size: 3.3333333333vw;
+  font-weight: 100;
+  line-height: 4.0972222222vw;
+  margin: 0;
+  margin-bottom: 2.0833333333vw;
+}
+
+.ourWaterContent p {
+  max-width: 100%;
+  color: #615f68;
+  font-family: "Helvetica Neue";
+  font-size: 1.25vw;
+  font-weight: 300;
+  line-height: 1.6666666667vw;
+  margin: 0;
+  margin-bottom: 2.0833333333vw;
+}
+
+.ourWaterBtn {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .ourWaterContainer {
+    flex-direction: column;
+  }
+  .ourWaterCard {
+    margin-bottom: 11.25vw;
+    width: 100%;
+  }
+  .ourWaterCard img {
+    width: 100%;
+  }
+  .ourWaterContent {
+    padding: 9.375vw 4.6875vw 5vw;
+    height: auto;
+  }
+  .ourWaterContent h2 {
+    font-size: 7.8125vw;
+    line-height: 7.8125vw;
+    margin-bottom: 6.25vw;
+  }
+  .ourWaterContent p {
+    font-size: 4.375vw;
+    line-height: 5.9375vw;
+    margin-bottom: 6.25vw;
+  }
+}
+/*<<<< SECTION OUR SUSTAINABILITY AND  FOR WHERE TO BUY SECTION >>>> */
+.sustainabilityActionContainer {
+  display: flex;
+  align-items: stretch;
+}
+
+/* .sustainabilityImage {
+      width: 48.19444444444444vw;
+  } */
+.sustainabilityImage {
+  background-image: url("/image/lawn.jpg");
+  width: 48.1944444444vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.sustainabilityContent {
+  background: #fff;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4.8611111111vw 6.9444444444vw;
+  flex: 1;
+}
+
+.sustainabilityContent h2 {
+  max-width: 100%;
+  color: #615f68;
+  font-family: "Helvetica Neue";
+  font-size: 3.3333333333vw;
+  font-weight: 100;
+  line-height: 4.0972222222vw;
+  margin: 0;
+  margin-bottom: 2.0833333333vw;
+}
+
+.sustainabilityContent p {
+  color: #615f68;
+  font-family: "Helvetica Neue";
+  font-size: 1.35vw;
+  font-weight: 300;
+  line-height: 1.6666666667vw;
+  margin-bottom: 2.0833333333vw;
+}
+
+.toBuyImage {
+  background-image: url("/image/to-buy.jpg");
+  width: 48.1944444444vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.endBtnMargin {
+  margin-top: 1.3888888889vw;
+}
+
+@media screen and (max-width: 767px) {
+  .ourSustainabilityRespons {
+    margin-top: 0;
+  }
+  .sustainabilityActionContainer {
+    flex-direction: column;
+  }
+  .sustainabilityImage {
+    width: 100%;
+    height: 80.3125vw;
+  }
+  .sustainabilityContent {
+    padding: 9.375vw 4.6875vw 5vw;
+  }
+  .sustainabilityContent h2 {
+    max-width: 100%;
+    font-size: 7.8125vw;
+    line-height: 7.8125vw;
+    margin-bottom: 6.25vw;
+  }
+  .sustainabilityContent p {
+    font-size: 4.375vw;
+    line-height: 5.9375vw;
+    margin-bottom: 6.25vw;
+  }
+  .toBuyImage {
+    width: 100%;
+    height: 68.75vw;
+  }
+  .endBtnMargin {
+    margin-top: 1.3888888889vw;
+    margin-bottom: 6.25vw;
+  }
+}
+/*<<<< SECTION SOCIAL MEDIA >>>> */
+.socialContainer {
+  display: flex;
+  align-items: stretch;
+}
+
+.socialContent {
+  background: #fff;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 6.9444444444vw;
+  flex: 1;
+}
+
+.socialContent h2 {
+  color: #615f68;
+  font-family: "Helvetica Neue";
+  font-size: 3.3333333333vw;
+  font-weight: 100;
+  line-height: 4.0972222222vw;
+  margin: 0;
+  margin-bottom: 2.0833333333vw;
+}
+
+.socialContent p {
+  color: #615f68;
+  font-family: "Helvetica Neue";
+  font-size: 1.25vw;
+  font-weight: 300;
+  line-height: 1.6666666667vw;
+}
+
+.socialPictures {
+  width: 57.9vw;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+}
+
+.socialLink img {
+  display: block;
+  width: 14.475vw;
+  height: 14.475vw;
+}
+
+@media screen and (max-width: 767px) {
+  .socialContainer {
+    flex-direction: column-reverse;
+  }
+  .socialContent {
+    padding: 9.375vw 4.6875vw 10.9375vw;
+  }
+  .socialContent h2 {
+    font-size: 7.8125vw;
+    line-height: 7.8125vw;
+    margin-bottom: 6.25vw;
+  }
+  .socialContent p {
+    font-size: 4.375vw;
+    line-height: 5.9375vw;
+  }
+  .socialPictures {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+  }
+  .socialLink img {
+    width: 100%;
+    height: 45.6vw;
+  }
+}
+/*<<<<<< FOOTER >>>>> */
+footer {
+  background-color: #fff;
+}
+
+.siteAllLinks {
+  display: flex;
+  padding-top: 6.3888888889vw;
+}
+
+.footerLogoBrand {
+  width: 19.4444444444vw;
+  padding-left: 6.9444444444vw;
+}
+
+.footerLogoBrand img {
+  display: block;
+  width: 5vw;
+  height: 4.33vw;
+}
+
+.footerMenu {
+  display: flex;
+  align-items: self-start;
+  justify-content: space-between;
+  flex: 1;
+  padding-right: 5.5555555556vw;
+}
+
+.menuListHeading {
+  color: #615f68;
+  font-size: 0.9722222222vw;
+  font-weight: 700;
+  line-height: 1.1805555556vw;
+  text-decoration: none;
+}
+
+.menuListHeading > i {
+  display: none;
+}
+
+.menuList {
+  margin-top: 0.8333333333vw;
+}
+
+.menuList li {
+  display: list-item;
+}
+
+.menuList li a {
+  color: #615f68;
+  font-size: 0.9722222222vw;
+  font-weight: 100;
+  line-height: 1.6666666667vw;
+}
+
+/*<<<< FINALLY FOOTER SECTION >>>> */
+.socialAllLinks {
+  display: flex;
+  align-items: center;
+  margin-top: 7.6388888889vw;
+  padding-bottom: 4.8611111111vw;
+}
+
+.addLogo {
+  width: 24.3055555556vw;
+  padding-left: 6.9444444444vw;
+}
+
+.addLogo img {
+  width: 7.7777777778vw;
+}
+
+.regionMenu {
+  width: 15.9722222222vw;
+}
+
+.regionMenu span {
+  color: #615f68;
+  font-family: "Helvetica Neue";
+  font-size: 0.9722222222vw;
+  font-weight: 100;
+  line-height: 1.1111111111vw;
+}
+
+.dropUp {
+  position: relative;
+  display: inline-block;
+}
+
+.dropBtn {
+  border: none;
+  color: #615f68;
+  font-family: "Helvetica Neue";
+  font-size: 0.9722222222vw;
+  font-weight: 700;
+  line-height: 1.1111111111vw;
+  background: 0 0;
+  padding: 0;
+  height: 2.0833333333vw;
+  display: flex;
+  align-items: center;
+}
+
+.dropBtn > i {
+  padding-left: 0.4vw;
+  font-size: larger;
+}
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 11.1111111111vw;
+  bottom: 2.0833333333vw;
+  right: -1.1111111111vw;
+  z-index: 1;
+  box-shadow: 0vw -0.6944444444vw 1.3888888889vw -0.3472222222vw rgba(0, 0, 0, 0.5);
+}
+
+.dropUp:hover .dropup-content {
+  display: block;
+  padding: 0.6944444444vw 0;
+}
+
+.dropup-content ul li {
+  padding: 0 1.1111111111vw;
+  text-align: right;
+}
+
+.dropup-content ul li a {
+  padding: 0.8333333333vw 0;
+  text-decoration: none;
+  display: inline-block;
+  color: #afaeb1;
+  font-size: 0.7986111111vw;
+  font-weight: 100;
+  line-height: 0.9027777778vw;
+  text-transform: none;
+  letter-spacing: 0;
+  text-align: right;
+  border-bottom: solid 0.1388888889vw #fff;
+}
+
+.social-icons {
+  flex: 1;
+}
+
+.social-icons span {
+  display: none;
+}
+
+.social-icons > i {
+  display: none;
+}
+
+.social-icons ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 20.8333333333vw;
+  float: right;
+  padding-right: 5.5555555556vw;
+}
+
+.social-icons ul li a img {
+  height: 1.5vw;
+  display: block;
+  transition: all 0.5s;
+}
+
+.social-icons ul li a img:hover {
+  transform: scale(1.4);
+}
+
+@media screen and (max-width: 767px) {
+  .footerContainer {
+    padding: 11.25vw 4.6875vw 0;
+  }
+  .siteAllLinks {
+    flex-direction: column;
+  }
+  .footerLogoBrand {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 8.125vw;
+  }
+  .footerLogoBrand img {
+    display: block;
+    width: 22.5vw;
+    height: 18.15vw;
+  }
+  .footerMenu {
+    padding-right: 0;
+    flex-direction: column;
+  }
+  .menuListWrap {
+    width: 100%;
+    margin: 3.125vw 0;
+  }
+  .menuListHeading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 4.375vw;
+    line-height: 5.3125vw;
+  }
+  .menuListHeading h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 4.375vw;
+    line-height: 5.3125vw;
+  }
+  .menuListHeading > i {
+    display: block;
+  }
+  .open {
+    transform: rotate(180deg);
+  }
+  .menuList {
+    display: none;
+    margin-top: 3.75vw;
+  }
+  .active {
+    display: block;
+  }
+  .menuList li a {
+    font-size: 4.375vw;
+    line-height: 7.5vw;
+  }
+  .socialAllLinks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11.25vw;
+    padding-bottom: 10vw;
+  }
+  .addLogo {
+    width: 40%;
+    padding-left: 0;
+  }
+  .addLogo img {
+    width: 31.875vw;
+  }
+  .regionMenu {
+    width: 30%;
+    text-align: center;
+  }
+  .regionMenu span {
+    display: none;
+  }
+  .dropBtn {
+    font-size: 4.375vw;
+    line-height: 5vw;
+    height: 9.375vw;
+  }
+  .dropBtn > i {
+    padding-left: 0.6vw;
+    font-size: 3.6vw;
+  }
+  .dropup-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 50vw;
+    bottom: 9.375vw;
+    right: 0vw;
+    z-index: 1;
+    box-shadow: 0vw -3.125vw 6.25vw -1.5625vw rgba(0, 0, 0, 0.5);
+  }
+  .dropUp:hover .dropup-content {
+    display: block;
+    padding: 3.125vw 0;
+    z-index: 0;
+  }
+  .dropup-content ul li {
+    padding: 0 5vw;
+    text-align: center;
+  }
+  .dropup-content ul li a {
+    padding: 3.75vw 0;
+    text-decoration: none;
+    display: inline-block;
+    color: #afaeb1;
+    font-size: 3.59375vw;
+    font-weight: 100;
+    line-height: 4.0625vw;
+    text-transform: none;
+    letter-spacing: 0;
+    text-align: right;
+    border-bottom: solid 0.625vw #fff;
+  }
+  .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+  }
+  .social-icons span {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #615f68;
+    font-weight: 700;
+    font-size: 4.375vw;
+    line-height: 5vw;
+  }
+  .social-icons > i {
+    display: inline-block;
+    padding-left: 0.3vw;
+    font-size: 3.6vw;
+  }
+  .social-icons div {
+    display: none;
+    position: absolute;
+    bottom: 9.375vw;
+    right: 0vw;
+    background-color: #fff;
+    box-shadow: 0vw -3.125vw 6.25vw -1.5625vw rgba(0, 0, 0, 0.5);
+    height: 66vw;
+    padding: 3.125vw 0;
+    z-index: 0;
+  }
+  .social-icons:hover.social-icons div {
+    display: block;
+  }
+  .social-icons ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 9.8333333333vw;
+    height: 58vw;
+    float: right;
+    padding-right: 0;
+  }
+  .social-icons div ul li a img {
+    width: 7vw;
+    height: 7vw;
+    display: block;
+    transition: all 0.5s;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,158 @@
+/* <<< SECTION  ROTHY'S EVIAN >>>> */
+
+.aboutWaterSecond {
+  padding-top: 3.166666666666667vw;
+}
+
+.aboutWaterTwoWrapper {
+  // display: flex;
+  // height: 43.263888888888886vw;
+  flex-direction: row-reverse;
+}
+
+.aboutWaterLeftAdd {
+  background: linear-gradient(to bottom, #d4d8e1 40%, #dd7e96 95%, rgb(254, 254, 0) 9%);
+  padding: 3.555555555555555vw 4.861111111111111vw 3.4722222222222223vw;
+}
+
+.aboutWaterSecondTitle {
+  color: #000000;
+  font-size: 2.3333333333333335vw;
+  font-weight: 100;
+  line-height: 4.097222222222222vw;
+  text-transform: uppercase;
+  margin-bottom: 2vw;
+}
+
+.aboutWaterSecondTitle span {
+  text-transform: lowercase;
+  color: red;
+}
+
+.aboutWaterTextAdd {
+  font-size: 1.6666666666666667vw;
+  line-height: 2.0833333333333335vw;
+  text-align: center;
+  width: 40.111111111111114vw;
+  color: #615f68;
+  margin-bottom: 2.0833333333333335vw;
+}
+
+.aboutWaterImageRight {
+  width: 40%;
+  background-image: url("/image/twoPersons.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+// .aboutWaterImageLeft img {
+//   width: 100%;
+//   height: 43.263888888888886vw;
+// }
+
+// .aboutWaterTwoRight {
+//   width: 60%;
+//   position: relative;
+//   background-image: url("/image/evian-of-rothy.png");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center center;
+//   height: 43.263888888888886vw;
+// }
+
+// .aboutWaterTwoRight p {
+//   position: absolute;
+//   left: 7.40277777777778vw;
+//   top: 8.055555555555555vw;
+//   font-size: 1.6666666666666667vw;
+//   line-height: 2.0833333333333335vw;
+//   text-align: center;
+//   width: 40.111111111111114vw;
+//   color: #615f68;
+//   margin-bottom: 2.0833333333333335vw;
+// }
+
+// .aboutWaterSecondBtn {
+//   position: absolute;
+//   left: 18.99444444444444vw;
+//   bottom: 5.694444444444445vw;
+// }
+
+// @media screen and (max-width:767px)  {
+//   // .aboutWaterSecond {
+//   //  padding-top: 0;
+//   // }
+
+//   // .aboutWaterTwoWrapper {
+//   //   flex-direction: column;      
+//   // }
+
+//   // .aboutWaterImageLeft {
+//   //   width: 100%;
+//   //   height: 70.3125vw;
+//   //   background-image:url("//image/HomePage_Rothys_Tile_mobile_top.jpg");
+//   // }
+
+//   // .aboutWaterTwoRight {
+
+//   // }
+// }
+
+@media screen and (max-width:767px) {
+  .aboutWaterSecond {
+    padding-top: 0;
+  }
+
+  .aboutWater {
+    margin-bottom: 11.25vw;
+  }
+
+  .aboutWaterWrapper {
+    flex-direction: column-reverse;
+  }
+
+  .aboutWaterLeftAdd {
+    padding: 9.375vw 3.125vw 6.25vw;
+  }
+
+  .aboutWaterSecondTitle {
+    font-size: 7.8125vw;
+    line-height: 7.8125vw;
+    margin-bottom: 6.25vw;
+  }
+
+  .aboutWaterTextAdd {
+    font-size: 5vw;
+    line-height: 6.5625vw;
+    text-align: center;
+    width: 100%;
+    padding: 0 6.25vw
+  }
+
+  .aboutWaterImage {
+    justify-content: center;
+  }
+
+  .aboutWaterImage img {
+    width: 25vw;
+    margin: 1.5625vw;
+  }
+
+  .aboutWaterBtn {
+    margin-top: 4.6875vw;
+    font-size: 2.8125vw;
+    line-height: 7.03125vw;
+    letter-spacing: .20089284375vw;
+    border: solid 0.3125vw #615f68;
+    padding: 0.625vw 1.5625vw;
+    min-width: 37.5vw;
+  }
+
+  .aboutWaterImageRight {
+    width: 100%;
+    height: 70.3125vw;
+    background-image: url("/image/HomePage_Rothys_Tile_mobile_top.jpg");
+
+  }
+}

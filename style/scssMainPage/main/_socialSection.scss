@@ -1,0 +1,81 @@
+/*<<<< SECTION SOCIAL MEDIA >>>> */
+
+.socialContainer {
+  display: flex;
+  align-items: stretch;
+}
+
+.socialContent {
+  background: #fff;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 6.944444444444445vw;
+  flex: 1;
+}
+
+.socialContent h2 {
+  color: #615f68;
+  font-family: "Helvetica Neue";
+  font-size: 3.3333333333333335vw;
+  font-weight: 100;
+  line-height: 4.097222222222222vw;
+  margin: 0;
+  margin-bottom: 2.0833333333333335vw;
+}
+
+.socialContent p {
+  color: #615f68;
+  font-family: "Helvetica Neue";
+  font-size: 1.25vw;
+  font-weight: 300;
+  line-height: 1.6666666666666667vw;
+}
+
+.socialPictures {
+  width: 57.9vw;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+}
+
+.socialLink img {
+  display: block;
+  width: 14.475vw;
+  height: 14.475vw;
+}
+
+@media screen and (max-width:767px) {
+  .socialContainer {
+    flex-direction: column-reverse;
+  }
+
+  .socialContent {
+    padding: 9.375vw 4.6875vw 10.9375vw;
+  }
+
+  .socialContent h2 {
+    font-size: 7.8125vw;
+    line-height: 7.8125vw;
+    margin-bottom: 6.25vw;
+  }
+
+  .socialContent p {
+    font-size: 4.375vw;
+    line-height: 5.9375vw;
+  }
+
+
+  .socialPictures {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+  }
+  
+  .socialLink img {
+   width: 100%;
+   height: 45.6vw;
+  }
+}

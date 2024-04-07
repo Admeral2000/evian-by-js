@@ -1,0 +1,136 @@
+/* <<<  MAIN >>> */
+
+/*<<< SECTION ADVERTISE >>>*/
+
+.aboutWater {
+  margin: 4.861111111111111vw 0;
+}
+
+.aboutWaterWrapper {
+  max-width: 100%;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.aboutWaterLeft {
+  background-color: #dd7e96;
+  flex: 1;
+  padding: 5.555555555555555vw 4.861111111111111vw 3.4722222222222223vw;
+  text-align: center;
+}
+
+.aboutWaterText {
+  /* color: #fff;
+      font-size: 27.1px;
+      font-weight: 300;
+      line-height: 2.0833333333333335vw;
+      text-align: center;
+      padding: 0 3.8194444444444446vw;
+      margin-bottom: 4.166666666666667vw; */
+
+  color: #fff;
+  font-size: 1.6666666666666667vw;
+  font-weight: 300;
+  line-height: 2.0833333333333335vw;
+  text-align: center;
+  padding: 0 3.8194444444444446vw;
+  margin-bottom: 4.166666666666667vw;
+}
+
+.aboutWaterImage {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutWaterImage img {
+  /* max-width: 28%;
+      /* max-height: 70%; */
+  /* margin: 10.6944px;  */
+  width: 11.25vw;
+  margin: 0.6944444444444444vw;
+}
+
+.aboutWaterBtn {
+  background: #fff;
+  margin-top: 2.0833333333333335vw;
+  color: #615f68;
+  font-size: 0.9027777777777778vw;
+  font-weight: 600;
+  line-height: 2.0833333333333335vw;
+  text-align: center;
+  letter-spacing: 0.09672618055555555vw;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: solid 0.10416666666666667vw #615f68;
+  padding: 0.5555555555555556vw 1.0416666666666667vw;
+  min-width: 16.11111111111111vw;
+  display: inline-block;
+  // margin-top: 32px;
+  /*font-size: 13px;
+      font-weight: 600;
+      line-height: 30px;*/
+  /* font-family: "Helvetica Neue"; */
+}
+
+.aboutWaterBtn:hover {
+  background-color: #d81d49;
+  color: #ffffff;
+  border: solid 0.10416666666666667vw #d81d49;
+}
+
+.aboutWaterRight {
+  width: 48%;
+  background-image: url("//www.evian.com/en_us/wp-content/themes/evian/assets/css/../images/balmain/evian-balmain-group-lifting-woman.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media screen and (max-width:767px) {
+  .aboutWater {
+    margin-bottom: 11.25vw;
+  }
+
+  .aboutWaterWrapper {
+    flex-direction: column-reverse;
+  }
+
+  .aboutWaterLeft {
+    padding: 9.375vw 3.125vw 6.25vw;
+  }
+
+  .aboutWaterText {
+    font-size: 5vw;
+    line-height: 6.5625vw;
+    padding: 0 8.4375vw;
+    margin-bottom: 9.375vw;
+  }
+
+  .aboutWaterImage {
+    justify-content: center;
+  }
+
+  .aboutWaterImage img {
+    width: 25vw;
+    margin: 1.5625vw;
+  }
+
+  .aboutWaterBtn {
+    margin-top: 4.6875vw;
+    font-size: 2.8125vw;
+    line-height: 7.03125vw;
+    letter-spacing: .20089284375vw;
+    border: solid 0.3125vw #615f68;
+    padding: 0.625vw 1.5625vw;
+    min-width: 37.5vw;
+  }
+
+  .aboutWaterRight {
+    width: 100%;
+    height: 70.3125vw;
+    // background-image: url("//www.evian.com/en_us/wp-content/themes/evian/assets/css/../images/balmain/evian-balmain-group-lifting-woman-sm.jpg");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center center;
+  }
+}

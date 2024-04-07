@@ -1,0 +1,81 @@
+ /*<<<<< Header 1-section >>>>*/
+
+ .hero {
+   padding-top: 10%;
+ }
+
+ .waterInfo {
+   position: relative;
+   overflow: hidden;
+   background-image: url(//www.evian.com/en_us/wp-content/themes/evian/assets/css/../images/home-hero-bg.jpg);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   height: 54.02777777777778vw;
+ }
+
+ .waterInfoWrapper {
+   position: absolute;
+   width: 41.666666666666664vw;
+   left: 6.944444444444445vw;
+   top: 8.333333333333334vw;
+ }
+
+ .waterInfoTitle {
+   color: #615f68;
+   font-size: 4.5vw;
+   font-weight: 400;
+   line-height: 4.861111111111111vw;
+   letter-spacing: -0.1388888888888889vw;
+   margin: 0;
+   margin-bottom: 2.7777777777777777vw;
+ }
+
+ .waterInfoText {
+   font-size: 1.6666666666666667vw;
+   line-height: 2.0833333333333335vw;
+   color: #615f68;
+   font-weight: 300;
+   /* padding-right: 3.4722222222222223vw; */
+   /* font-family: "Helvetica Neue"; */
+   /* font-size: 1.25vw; */
+ }
+
+ @media screen and (max-width:767px) {
+   .hero {
+     padding-top: 22.001vw;
+     margin-bottom: 11.25vw;
+   }
+
+   .waterInfo {
+     //   background-image: url(//www.evian.com/en_us/wp-content/themes/evian/assets/css/../images/home-hero-bg.jpg);
+     //   // background-image: url(//www.evian.com/en_us/wp-content/themes/evian/assets/css/../images/home-hero-bg-sm.jpg);
+     // background-size: 170% ;
+     // background-position: 59% 45%;
+     // height: 137.5vw;
+     background-image: url("/image/home-hero-bg-sm.jpg");
+     background-size: 100%;
+     background-position: bottom;
+     background-repeat: no-repeat;
+     height: 137.5vw;
+   }
+
+   .waterInfoWrapper {
+     position: static;
+     width: auto;
+     padding: 6.25vw 4.6875vw;
+   }
+
+   .waterInfoTitle {
+     font-size: 8.3125vw;
+     line-height: 9.375vw;
+     letter-spacing: -.23978365625000003vw;
+     margin-bottom: 6.25vw;
+     font-weight: 100;
+   }
+
+   .waterInfoText {
+     font-size: 5vw;
+     line-height: 6.5625vw;
+     padding-right: 31.25vw;
+   }
+ }

@@ -1,0 +1,87 @@
+/*<<< SECTION OUR WATER >>>*/
+
+.ourWaterContainer {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.ourWaterCard {
+  width: 43.47222222222222vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.ourWaterCard img {
+  width: 100%;
+  overflow: clip;
+}
+
+.ourWaterContent {
+  background: #fff;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 4.861111111111111vw 6.944444444444445vw;
+  justify-content: center;
+  flex: 1;
+}
+
+.ourWaterContent h2 {
+  color: #615f68;
+  font-family: "Helvetica Neue";
+  font-size: 3.3333333333333335vw;
+  font-weight: 100;
+  line-height: 4.097222222222222vw;
+  margin: 0;
+  margin-bottom: 2.0833333333333335vw;
+}
+
+.ourWaterContent p {
+  max-width: 100%;
+  color: #615f68;
+  font-family: "Helvetica Neue";
+  font-size: 1.25vw;
+  font-weight: 300;
+  line-height: 1.6666666666666667vw;
+  margin: 0;
+  margin-bottom: 2.0833333333333335vw;
+}
+
+.ourWaterBtn {
+  margin-top: 0;
+}
+
+@media screen and (max-width:767px) {
+
+  .ourWaterContainer {
+    flex-direction: column;
+  }
+
+  .ourWaterCard {
+    margin-bottom: 11.25vw;
+    width: 100%;
+  }
+
+  .ourWaterCard img {
+    width: 100%;
+  }
+
+  .ourWaterContent {
+    padding: 9.375vw 4.6875vw 5vw;
+    height: auto;
+  }
+
+  .ourWaterContent h2 {
+    font-size: 7.8125vw;
+    line-height: 7.8125vw;
+    margin-bottom: 6.25vw;
+  }
+
+  .ourWaterContent p {
+    font-size: 4.375vw;
+    line-height: 5.9375vw;
+    margin-bottom: 6.25vw;
+  }
+}

@@ -1,0 +1,101 @@
+/*<<<< SECTION OUR SUSTAINABILITY AND  FOR WHERE TO BUY SECTION >>>> */
+
+.sustainabilityActionContainer {
+  display: flex;
+  align-items: stretch;
+}
+
+/* .sustainabilityImage {
+      width: 48.19444444444444vw;
+  } */
+.sustainabilityImage {
+  background-image: url("/image/lawn.jpg");
+  width: 48.19444444444444vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.sustainabilityContent {
+  background: #fff;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4.861111111111111vw 6.944444444444445vw;
+  flex: 1;
+}
+
+.sustainabilityContent h2 {
+  max-width: 100%;
+  color: #615f68;
+  font-family: "Helvetica Neue";
+  font-size: 3.3333333333333335vw;
+  font-weight: 100;
+  line-height: 4.097222222222222vw;
+  margin: 0;
+  margin-bottom: 2.0833333333333335vw;
+}
+
+.sustainabilityContent p {
+  color: #615f68;
+  font-family: "Helvetica Neue";
+  font-size: 1.35vw;
+  font-weight: 300;
+  line-height: 1.6666666666666667vw;
+  margin-bottom: 2.0833333333333335vw;
+}
+
+.toBuyImage {
+  background-image: url("/image/to-buy.jpg");
+  width: 48.19444444444444vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.endBtnMargin {
+  margin-top: 1.3888888888888888vw;
+}
+
+@media screen and (max-width:767px) {
+  .ourSustainabilityRespons {
+    margin-top: 0;
+  }
+
+  .sustainabilityActionContainer {
+    flex-direction: column;
+  }
+
+  .sustainabilityImage {
+    width: 100%;
+    height: 80.3125vw;
+  }
+
+  .sustainabilityContent {
+    padding: 9.375vw 4.6875vw 5vw;
+  }
+
+  .sustainabilityContent h2 {
+    max-width: 100%;
+    font-size: 7.8125vw;
+    line-height: 7.8125vw;
+    margin-bottom: 6.25vw;
+  }
+
+  .sustainabilityContent p {
+    font-size: 4.375vw;
+    line-height: 5.9375vw;
+    margin-bottom: 6.25vw;
+  }
+
+  .toBuyImage {
+    width: 100%;
+    height: 68.75vw;
+  }
+
+  .endBtnMargin {
+    margin-top: 1.3888888888888888vw;
+    margin-bottom: 6.25vw;
+  }
+}

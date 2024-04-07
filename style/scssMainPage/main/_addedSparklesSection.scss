@@ -1,0 +1,86 @@
+/*<<< SECTION WE'VE ADDED SPARKLES >>>*/
+
+.aboutWaterThirdWrapper {
+  background-image: url("//www.evian.com/en_us/wp-content/themes/evian/assets/css/../images/sparkles/sparkling_HomePage_Tile.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 43.263888888888886vw;
+  display: flex;
+  align-items: stretch;
+}
+
+.aboutWaterThirdContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 7.361111111111111vw 35.27777777777778vw 0 10.833333333333334vw;
+  flex: 1;
+  position: relative;
+}
+
+.aboutWaterThirdContent h3 {
+  color: #ffff;
+  font-size: 7vw;
+  font-weight: 500;
+  line-height: 5.861111111111111vw;
+  letter-spacing: -0.1388888888888889vw;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3.3333333333333335vw;
+  font-stretch: extra-expanded;
+}
+
+.aboutWaterThirdBtn {
+  background: #fff;
+  margin-bottom: 1.3888888888888888vw;
+  min-width: 10.833333333333334vw;
+  color: #615f68;
+  font-size: 0.9027777777777778vw;
+  font-weight: 600;
+  line-height: 2.0833333333333335vw;
+  text-align: center;
+  letter-spacing: 0.09672618055555555vw;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: solid 0.10416666666666667vw #615f68;
+  padding: 0.5555555555555556vw 1.0416666666666667vw;
+  display: inline-block;
+}
+
+.aboutWaterThirdBtn:hover {
+  background-color: #d81d49;
+  color: #ffffff;
+  border: solid 0.10416666666666667vw #d81d49;
+}
+
+@media screen and (max-width:767px) {
+  .aboutWaterThird {
+    margin-bottom: 11.25vw;
+  }
+
+  .aboutWaterThirdWrapper {
+    background-image: url("/image/sparkling_HomePage_Tile-sm.jpg");
+    height: 152.5vw;
+  }
+
+  .aboutWaterThirdContent {
+    padding: 20.3125vw 8.75vw 0;
+  }
+
+  .aboutWaterThirdContent h3 {
+    font-size: 12.8125vw;
+    line-height: 12.8125vw;
+    margin-bottom: 4.6875vw;
+  }
+
+  .aboutWaterThirdBtn {
+    min-width: 27.5vw;
+    padding: 0.625vw 1.5625vw 0;
+    font-size: 2.8125vw;
+    line-height: 7.03125vw;
+    letter-spacing: .20089284375vw;
+    border: solid 0.3125vw #615f68;
+  }
+}

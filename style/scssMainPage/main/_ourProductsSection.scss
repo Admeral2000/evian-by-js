@@ -1,0 +1,51 @@
+/*<<< SECTION OUR PRODUCTS >>>*/
+
+.aboutWaterFourthWrapper {
+  width: 100%;
+  background: #fff;
+  padding: 6.597222222222222vw 7.291666666666667vw;
+  height: 59.44444444444444vw;
+}
+
+.aboutWaterFourthContent h2 {
+  color: #615f68;
+  font-family: "Helvetica Neue";
+  font-size: 3.3333333333333335vw;
+  font-weight: 100;
+  line-height: 4.097222222222222vw;
+  margin: 0;
+  margin-bottom: 2.0833333333333335vw;
+}
+
+.aboutWaterFourthContent {
+  width: 28.47222222222222vw;
+  color: #615f68;
+  font-family: "Helvetica Neue";
+  font-size: 1.25vw;
+  font-weight: 300;
+  line-height: 1.6666666666666667vw;
+  margin: 0;
+  margin-bottom: 2.0833333333333335vw;
+}
+
+@media screen and (max-width:767px) {
+  .aboutWaterFourthWrapper {
+    padding: 6.25vw 4.6875vw;
+    height: 106.25vw;
+  }
+
+  .aboutWaterFourthWrapper h2 {
+    font-size: 7.8125vw;
+    line-height: 7.8125vw;
+    margin-bottom: 6.25vw;
+    font-weight: 100;
+  }
+
+  .aboutWaterFourthContent {
+    width: auto;
+    font-size: 4.375vw;
+    line-height: 5.9375vw;
+    font-weight: 100;
+    margin-bottom: 6.25vw;
+  }
+}
